@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\Cabinet;
+use App\Models\Computer;
 use App\Models\Corpse;
 use Illuminate\Database\Seeder;
 
@@ -20,7 +21,8 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-//        Corpse::factory(3)->create();
+        Corpse::factory(3)->create();
         Cabinet::factory(20)->create();
+        Computer::factory(780)->create();
     }
 }

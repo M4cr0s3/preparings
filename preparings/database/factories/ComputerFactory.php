@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Corpse>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Computer>
  */
-class CorpseFactory extends Factory
+class ComputerFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,7 +17,8 @@ class CorpseFactory extends Factory
     public function definition(): array
     {
         return [
-            'corpse_number' => rand(1, 3),
+            'specs' => json_encode($this->faker->text(200)),
+            'cabinet_id' => rand(1, 20),
         ];
     }
 }
