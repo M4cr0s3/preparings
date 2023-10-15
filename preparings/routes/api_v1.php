@@ -18,3 +18,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/get_cabinets', [CabinetController::class, 'getAllCabinets']);
 Route::get('/get_computers', [ComputerController::class, 'getAllComputers']);
+Route::get('/get_computer/{id}', [ComputerController::class, 'getExactComputer']);
